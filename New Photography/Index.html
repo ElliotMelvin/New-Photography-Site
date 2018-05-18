@@ -1,0 +1,145 @@
+<!doctype html>
+<html	lang="en-gb">
+
+<!----------------------Start Head ---------------------->	
+<head>	
+<meta charset="utf-8">
+<!-- meta tags for Internet Explorer and mobile devices -->
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!----Title---->
+	<title>Elliot Melvin</title>
+<!----End Title---->
+	
+<!----Font---->
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-----End Font----->	
+	
+<!----CSS---->
+	<link rel="stylesheet" href="AboutPageAssets/styles/layout.css"/>
+<!----End CSS---->
+	
+<!----Javascript---->
+	<script src="JavaScript/Navbar.js"> </script>
+	
+	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<!----End Javascript---->	
+</head>
+<!----------------------End Head  ---------------------->
+
+<!----------------------Start Body---------------------->
+<body>
+	
+<!----------Start Header---------->
+		<section id="top" header class="page-header">	
+			<!----Navbar---->
+			<div class="topnav" id="myTopnav">
+				<a href="#home" class="active">Home</a> 
+				<a href="#image-gallery">Image Gallery</a> <a href="#contact">Contact</a> 
+				<a href="#about">About Me</a> 
+				<a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a></div>
+			<!----End Navbar---->
+
+			<!----Header Content---->
+			<div class="header-content">
+				<h1 style="font-size:4vw">Elliot Melvin</h1>
+				<p>Photographer</p>
+			</div>
+			<!----End Header Content---->
+			
+		</section>	
+<!----------End Header---------->	
+
+	
+<!----------Image Gallery---------->
+		<section id="images" class="image-gallery">	
+			<div class="image--gallery-image">
+			<!--Image Gallery Content-->
+			<div class="image-gallery-content">
+				<h1>Image Gallery</h1>
+			</div>
+			<!--End Image Gallery Content-->
+			</div>
+		</section>	
+<!----------End Image Gallery---------->
+
+	
+<!----------About Me---------->	
+		<section id="about" class="about-me">	
+			<!--About Me Content-->
+			<div class="about-me-content">
+				<h1>About Me</h1>
+				<p>Hi! I’m Elliot and I’m a photographer in the quiet town of Stockport, but I shoot photographs all over the country. My favourite things in the world are exploring the world and shopping, and when I'm not takingphotographs you'll find me playing video games at home. My love of art is what made me want to be a photographer. I've just started in the indusrty of photography and I'm really enjoying it. </p>
+			</div>
+			<!--End About Me Content-->
+			
+		</section>	
+<!----------End About Me---------->	
+	
+	
+<!----------Contact Me---------->	
+		<section id="contact" class="contact-me">
+			<div class="about-image">
+			<!--About Me Content-->
+			<div class="contact-me-content">
+			<h2>Contact Me</h2>
+			</div>
+			<!--End About Me Content-->
+
+			<!--About Me Form-->
+			<div class="contact-me-form">
+				<form action="action_page.php">
+
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+				<label for="lname">Phone number</label>
+				<input type="text" id="pname" name="phonenumber" placeholder="Your phone number..">
+
+
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+				<input type="submit" value="Submit">
+
+				</form>
+			</div>
+			<!--End About Me Form-->
+			</div>
+		</section>	
+<!----------End Contact Me---------->
+	
+	
+<!----------Footer---------->
+		<section id="footer" class="footer">
+
+			<!--Footer Content-->
+			<div class="footer-content">
+					<h2>Elliot Melvin 2018 &copy;</h2>
+			<ul>
+				<li><a href="https://www.instagram.com/elliotm_photography/" target="_blank"><i class="fa fa-fw fa-instagram"></i></a></li>
+				<li><a href="https://www.redbubble.com/people/ElliotMelvin?asc=u" target="_blank"><i class="fa fa-fw fa-image"></i></a></li>
+				<li><a href="https://github.com/ElliotMelvin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+			</ul>
+			 </div>
+			<!--End Footer Content-->
+		</section>
+<!----------End Footer---------->
+
+
+</body>	
+</html>	
+<!----------------------End HTML---------------------->
