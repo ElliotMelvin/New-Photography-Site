@@ -22,6 +22,8 @@
 	
 <!----Javascript---->
 	<script src="JavaScript/Navbar.js"> </script>
+	<script src="JavaScript/Navbar Scroll.js"> </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	
 	<script>
 function myFunction() {
@@ -40,26 +42,32 @@ function myFunction() {
 <!----------------------Start Body---------------------->
 <body>
 	
+	
+
+<!----------End Loading Screen---------->	
+	
 <!----------Start Header---------->
+
 		<section id="top" header class="page-header">	
 			<!----Navbar---->
 			<div class="topnav" id="myTopnav">
-				<a href="#home" class="active">Home</a> 
-				<a href="#image-gallery">Image Gallery</a> <a href="#contact">Contact</a> 
-				<a href="#about">About Me</a> 
-				<a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a></div>
+				
+				<a  href="#home" class="active">Home</a> 
+				<a  href="#image-gallery" class="image">Image Gallery</a> 
+				<a  href="#contact" class="contact">Contact</a> 
+				<a  href="#about" class="about">About Me</a> 
+				
+				<a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a>
+			</div>
 			<!----End Navbar---->
 
 			<!----Header Content---->
-			<div class="header-content">
-				<h1 style="font-size:4vw">Elliot Melvin</h1>
+			<div class="header-content" id="transistion">
+				<h1>Elliot Melvin</h1>
 				<p>Photographer</p>
 			</div>
-			<!----End Header Content---->
-			
-		</section>	
+			<!----End Header Content----><a class="container-arrow scroll-to" href="#cards"> <span> <em class="fa fa-angle-down" aria-hidden="true"></em></span> </a></section>	
 <!----------End Header---------->	
-
 	
 <!----------Image Gallery---------->
 		<section id="images" class="image-gallery">	
@@ -134,12 +142,10 @@ function myFunction() {
 				<li><a href="https://www.redbubble.com/people/ElliotMelvin?asc=u" target="_blank"><i class="fa fa-fw fa-image"></i></a></li>
 				<li><a href="https://github.com/ElliotMelvin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 			</ul>
-			 </div>
+		  </div>
 			<!--End Footer Content-->
-		</section>
+</section>
 <!----------End Footer---------->
-
-
 </body>	
 </html>	
 <!----------------------End HTML---------------------->
