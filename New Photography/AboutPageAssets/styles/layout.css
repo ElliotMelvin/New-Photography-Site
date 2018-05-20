@@ -27,45 +27,37 @@ h2{
 
 /*---------- End Body ----------*/
 
-/*---------- Loader ----------*/
-
-
-/*---------- End Loader ----------*/
-
 /*---------- Header  ----------*/
+
+/*---- NavBar  ----*/
 .topnav {
   overflow: hidden;
   background-color: rgba(51,51,51,0.70);
-	position: fixed;
-	width: 100%;
-	text-align: center;
+  position: fixed;
+  width: 100%;
+  text-align: center;
 	 
 }
 .topnav a {
   
   display: inline-block;
   color: #f2f2f2;
-  padding: 12px 38px;
+  padding: 10px 38px;
   text-decoration: none;
   font-size: 26px;
-	
+  border-bottom: 3px solid transparent;    
+  transition: all .3s ease-in;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: #ee3b24;
+ background-color: #ddd;
+ color: #ee3b24;
  border-bottom: 3px solid rgba(238,59,36,0.80);
 }
-
 .topnav .icon {
   display: none;
 }
-.topnav a{
-	border-bottom: 3px solid transparent;    
-    transition: all .3s ease-in;
-	
-}
-
+/*---- End NavBar  ----*/
 #transistion h1 {
     text-align: center;
     animation: fadein 2s;
@@ -114,7 +106,6 @@ h2{
     }
 }
 
-
 .page-header{
 	background: url(../../images/Boat-header.jpg);
     height: 100%; 
@@ -141,8 +132,7 @@ h2{
 	font-size: 65px;
 	margin: 0;
 }
-  /* Arrow Button 
-	-----------------------------------*/
+  /*----- Arrow Button ----*/
   .container-arrow{
     margin-top: -20px;
     font-weight: bold;
@@ -168,6 +158,54 @@ h2{
 		@keyframes down{ 0%{transform:translateY(0px)} 100%{transform:translateY(20px)} } 
 	
 
+.text p {
+  font-size: 75px;
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  color: red;
+}
+#textphoto{
+	font-size: 55px;
+}
+.text p { margin:0; }
+#error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
+#code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+#textphoto:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+#textphoto,#error {
+  color: #fff;
+  text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+#textphoto span {
+  animation: upper 11s linear infinite;
+}
+#error span {
+  animation: upper 11s linear infinite;
+}
+#code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+#code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity:.4;
+}
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
 
 /*---------- End Header ----------*/
 
@@ -229,6 +267,9 @@ h2{
 	.header-content p{
 		font-size: 44px;
 	}
+	#textphoto{
+	font-size: 30px;
+}
 /*-- End Header --*/
 	
 /*-- Image Gallery --*/
@@ -260,6 +301,9 @@ h2{
 	.header-content p{
 		font-size: 50px;
 	}
+	#textphoto{
+	font-size: 32px;
+}
 /*-- End Header --*/
 
 /*-- Image Gallery --*/
