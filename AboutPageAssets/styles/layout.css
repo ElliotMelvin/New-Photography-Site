@@ -1,0 +1,497 @@
+/*---------- Body ----------*/
+body ,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+*,*:before,
+*:after {
+box-sizing: border-box;
+	
+}
+
+h1{
+	font-family: 'Gloria Hallelujah', cursive;
+	
+}
+
+h2{
+	font-family: 'Gloria Hallelujah', cursive;
+	
+}
+
+.topnav a,p{
+	font-family: 'Indie Flower', cursive;
+}
+
+/*---------- End Body ----------*/
+
+/*---------- Header  ----------*/
+
+/*---- NavBar  ----*/
+.topnav {
+  overflow: hidden;
+  /*background-color: rgba(51,51,51,0.70);*/
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+.topnav a {
+  
+  display: inline-block;
+  color: DarkRed;
+  padding: 10px 38px;
+  text-decoration: none;
+  font-size: 30px;
+  border-bottom: 3px solid transparent;    
+  transition: all .3s ease-in;
+}
+
+.topnav a:hover {
+ background-color: #ddd;
+ color: #ee3b24;
+ border-bottom: 3px solid rgba(238,59,36,0.80);
+}
+.topnav .icon {
+  display: none;
+}
+.bg {
+  background: #000;
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+}
+
+.show {
+  opacity: 0.4;
+}
+
+.transition {    
+  -webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+/*---- End NavBar  ----*/
+
+#transistion h1 {
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+#transistion p {
+    text-align: center;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.page-header{
+	background: url(../../images/Boat-header.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+	display: flex;
+	background-attachment: fixed;
+}
+.header-content{
+	width: 100%;
+	 margin: auto;
+	text-align: center;
+	
+}
+.header-content h1{
+	color: rgba(238,59,36,0.80);
+	font-size: 105px;
+	margin: 0;
+	
+}
+.header-content p{
+	color: white;
+	font-size: 65px;
+	margin: 0;
+}
+  /*----- Arrow Button ----*/
+  .container-arrow{
+    margin-top: -20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+    display: inline-block;
+    text-align: center;
+	  line-height: 40px;
+	  position: absolute;
+	  bottom:0;left:0;
+	  z-index: 10;
+	  width:100%;
+	  padding-bottom: 15px;
+	  cursor: pointer;
+	  font-size: 12px; 
+	}
+	.container-arrow:hover,
+	.container-arrow:focus{text-decoration: none;}
+
+		/* Arrow Bouncing */
+		.container-arrow span{  display: inline-block; font-size: 80px;	 animation: .7s down  infinite alternate; -webkit-animation: .7s down infinite alternate; } 
+		/***Animation Arrow down***/ 
+		@keyframes down{ 0%{transform:translateY(0px)} 100%{transform:translateY(20px)} } 
+	
+
+.text p {
+  font-size: 75px;
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  color: red;
+}
+#textphoto{
+	font-size: 55px;
+}
+.text p { margin:0; }
+#error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
+#code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+#textphoto:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+#textphoto,#error {
+  color: #fff;
+  text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+#textphoto span {
+  animation: upper 11s linear infinite;
+}
+#error span {
+  animation: upper 11s linear infinite;
+}
+#code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+#code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity:.4;
+}
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+
+/*---------- End Header ----------*/
+
+/*---------- Image Gallery ----------*/
+
+
+.image-content{
+	font-size: 40px;
+	text-align: center;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+	
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE10 */
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+	box-shadow: 2px 3px rgba(0,0,0,0.68);
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*----------- End Image Gallery ----------*/
+
+/*---------- About Me ----------*/
+
+/*---------- End About Me ----------*/
+
+/*---------- Contact Me ----------*/
+
+/*---------- End Contact Me ----------*/
+
+/*---------- Footer ----------*/
+
+/*---------- End Footer ----------*/
+
+/*-------------------- Nav Bar Media Query --------------------*/
+@media screen and (max-width: 720px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+	.topnav{
+		text-align: left;
+	}
+	.active{
+	background-color: rgba(238,59,36,0.77);
+	}
+	.topnav a {
+		padding: 16px 25px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+  .topnav.responsive 
+  .topnav.responsive{
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*-------------------- End Nav Bar Media Query --------------------*/
+
+/*-------------------- Media 0px - 375px --------------------*/
+@media screen and (min-width: 0px) and (max-width: 375px) {
+
+/*-- Header --*/
+.header-content h1{
+	font-size: 56px;
+	}
+	.header-content p{
+		font-size: 44px;
+	}
+	#textphoto{
+	font-size: 30px;
+}
+/*-- End Header --*/
+	
+/*-- Image Gallery --*/
+
+/*-- End Image Gallery --*/
+	
+/*-- About Me --*/
+
+/*-- End About Me --*/
+	
+/*-- Contact Me --*/	
+
+/*-- End Contact Me --*/
+
+/*-- Footer --*/
+
+/*-- End Footer --*/
+}
+
+/*-------------------- End Media 0px - 375px --------------------*/
+
+/*-------------------- Media 376px - 577px --------------------*/
+
+@media screen and (min-width: 376px) and (max-width: 577px) {
+/*-- Header --*/
+.header-content h1{
+	font-size: 62px;
+	}
+	.header-content p{
+		font-size: 50px;
+	}
+	#textphoto{
+	font-size: 32px;
+}
+/*-- End Header --*/
+
+/*-- Image Gallery --*/
+
+/*-- Image Gallery --*/
+
+/*-- End Image Gallery --*/
+
+/*-- About Me --*/
+
+/*-- End About Me --*/
+
+/*-- Contact Me --*/
+
+/*-- End Contact Me --*/
+	
+/*-- Footer --*/
+
+/*-- End Footer --*/
+}
+
+/*-------------------- Media 376px - 577px --------------------*/
+
+/*-------------------- Media 577px - 768px --------------------*/
+@media screen and ( min-width : 576px ) and (max-width : 757px ) {
+/*-- Header --*/
+
+/*-- End Header --*/
+
+/*-- Image Gallery --*/
+
+/*-- End Image Gallery --*/
+
+/*-- About Me --*/
+
+/*-- End About Me --*/
+
+/*-- Contact Me --*/
+
+/*-- End Contact Me --*/
+	
+/*-- Footer --*/
+
+/*-- End Footer --*/
+}
+
+/*-------------------- End Media 577px - 768px --------------------*/
+
+/*-------------------- Media 758 - 992pxpx --------------------*/
+@media screen and (min-width: 758px) and (max-width: 992px) {
+/*-- Header --*/
+
+/*-- End Header --*/
+
+/*-- Image Gallery --*/
+
+/*-- End Image Gallery --*/
+
+/*-- About Me --*/
+
+/*-- End About Me --*/
+
+/*-- Contact Me --*/
+
+/*-- End Contact Me --*/
+	
+/*-- Footer --*/
+
+/*-- End Footer --*/
+}
+
+/*-------------------- End Media 758 - 992pxpx --------------------*/
+
+/*-------------------- Media 992px - 1600px --------------------*/
+@media screen and (min-width: 993px) and (max-width: 1600px) {
+/*-- Header --*/
+
+/*-- End Header --*/
+	
+/*-- Image Gallery --*/	
+
+/*-- End Image Gallery --*/
+	
+/*-- About Me --*/
+
+/*-- End About Me --*/
+
+/*-- Contact Me --*/
+
+/*-- End Contact Me --*/
+	
+/*-- Footer --*/
+
+/*-- End Footer --*/
+}
+
+/*-------------------- End Media 992px - 1600px --------------------*/
+
+/*-------------------- Media 1600px - 1920px --------------------*/
+@media screen and (min-width : 1601px ) and ( max-width : 1920px ) {
+/*-- Header --*/
+
+/*-- End Header --*/
+	
+ /*-- Image Gallery --*/
+
+/*-- End Image Gallery --*/
+	
+/*-- About Me --*/	
+
+/*-- End About Me --*/
+	
+/*-- Contact Me --*/
+
+/*-- End Contact Me --*/	
+	
+/*-- Footer --*/
+
+/*-- End Footer --*/
+}
+/*-------------------- End Media 1600px - 1920px --------------------*/
