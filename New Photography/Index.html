@@ -12,25 +12,26 @@
 <!----End Title---->
 	
 <!----Font---->
-	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower">
+	
 <!-----End Font----->	
 	
 <!----CSS---->
 	<link rel="stylesheet" href="AboutPageAssets/styles/layout.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!----End CSS---->
 	
 <!----Javascript---->
-	<script src="JavaScript/Navbar.js"> </script>
+	<script src="JavaScript/Main.js"> </script>
 	<script src="JavaScript/Navbar Scroll.js"> </script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="JavaScript/scrollreveal.min.js"> </script>
 	
 	<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+     function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+     x.className += " responsive";
     } else {
         x.className = "topnav";
     }
@@ -42,9 +43,7 @@ function myFunction() {
 
 <!----------------------Start Body---------------------->
 <body>
-	
-	
-
+<!----------Loading Screen---------->
 <!----------End Loading Screen---------->	
 	
 <!----------Start Header---------->
@@ -52,7 +51,7 @@ function myFunction() {
 		<section id="top" header class="page-header">	
 			<!----Navbar---->
 			<div class="topnav" id="myTopnav">
-				<div class="bg transition"></div>
+				<div class="transition"></div>
 				<a  href="#home" class="active">Home</a> 
 				<a  href="#image-gallery" class="image">Image Gallery</a> 
 				<a  href="#contact" class="contact">Contact</a> 
@@ -76,13 +75,34 @@ function myFunction() {
 	
 <!----------Image Gallery---------->
 		<section id="images" class="image-gallery">	
-			<div class="image--gallery-image">
-			<!--Image Gallery Content-->
-			<div class="image-gallery-content">
-				<h1>Image Gallery</h1>
-			</div>
-			<!--End Image Gallery Content-->
-			</div>
+			<div class="image-content"><h1>Image Gallery</h1> </div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img class="one" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="two" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="three" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="four" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="five" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+  
+  </div>
+  <div class="column">
+    <img class="one" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="two" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="three" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="four" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+	<img class="five" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img class="one" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="two" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="three" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="four" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+    <img class="five" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
+  </div>
+ 
+</div>
 		</section>	
 <!----------End Image Gallery---------->
 
