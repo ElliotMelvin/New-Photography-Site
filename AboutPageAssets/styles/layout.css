@@ -14,12 +14,12 @@ box-sizing: border-box;
 
 h1{
 	font-family: 'Gloria Hallelujah', cursive;
-	
+	margin: 0;
 }
 
 h2{
 	font-family: 'Gloria Hallelujah', cursive;
-	
+	margin: 0;
 }
 
 .topnav a,p{
@@ -33,7 +33,7 @@ h2{
 /*---- NavBar  ----*/
 .topnav {
   overflow: hidden;
-  background-color: rgba(33,37,41,0.59);
+  background-color: rgba(33,37,41,0.65);
   position: fixed;
   width: 100%;
   text-align: center;
@@ -48,15 +48,15 @@ h2{
   border-bottom: 3px solid transparent;    
   transition: all .3s ease-in;
   width: 200px;
+  border-top: 2px solid rgba(255,29,0,1.00);
 }
-.about,.image,.active{
+.about,.image,.active,.videos{
 	border-right: 1px solid;
 }
-
 .topnav a:hover {
- background-color: rgba(221,221,221,0.67);
- color: #ee3b24;
- border-bottom: 3px solid rgba(238,59,36,0.80);
+ background-color: rgba(221,221,221,0.60);
+ border-bottom: 3px solid rgba(255,29,0,1.00);
+	  
 }
 .topnav .icon {
   display: none;
@@ -222,7 +222,14 @@ h2{
 /*---------- End Header ----------*/
 
 /*---------- Image Gallery ----------*/
-
+.image-gallery{
+	
+	padding-bottom: 30px;
+	padding-top: 50px;
+}
+h1{
+	padding-bottom: 50px;
+}
 .image-content{
 	font-size: 40px;
 	text-align: center;
@@ -253,7 +260,7 @@ h2{
 .column img {
     margin-top: 8px;
     vertical-align: middle;
-	box-shadow: 2px 3px rgba(0,0,0,0.68);
+	box-shadow: 2px 3px rgba(0,0,0,0.88);
 
 }
 
@@ -278,8 +285,72 @@ h2{
 /*----------- End Image Gallery ----------*/
 
 /*---------- About Me ----------*/
+.about-me{
+	background: url(../../images/adult-blur-camera-368893.jpg);
+    height: auto;
+    background-size: cover;	
+	padding-bottom: 370px;
+	
+}
+.about-me h2{
+	font-size: 45px;
+	text-align: center;
+	box-shadow: 0px 4px 20px #000000;
+	padding-bottom:  65px;
+	margin-bottom: 40px;
+	padding-top: 65px;
+	color: rgba(0,0,0,1.00);
+}
 
+.about-me-content{
+	width: auto;
+}
+.textOne{
+	margin-top: 80px;
+	font-size: 35px;
+	margin-right: 300px;
+	margin-left: 300px;
+	width: auto;
+	background-color: rgba(0,0,0,0.70);
+	padding: 20px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,1.00);
+	border-radius: 10px;
+}
+.textTwo{
+	font-size: 35px;
+	margin-right: 300px;
+	margin-left: 300px;
+	width: auto;
+	background-color: rgba(0,0,0,0.70);
+	padding: 20px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,1.00);
+	border-radius: 10px;
+}
+.textThree{
+	font-size: 35px;
+	margin-right: 300px;
+	margin-left: 300px;
+	width: auto;
+	background-color: rgba(0,0,0,0.70);
+	padding: 20px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,1.00);
+	border-radius: 10px;
+}
+.about-me p{
+	color: white;
+}
 /*---------- End About Me ----------*/
+
+/*---------- Videos ----------*/
+.videos h2 {
+	text-align: center;
+	font-size: 40px;
+}
+.video-content{
+	text-align: center;
+}
+
+/*---------- End Videos ----------*/
 
 /*---------- Contact Me ----------*/
 
@@ -306,9 +377,11 @@ h2{
 	.topnav a {
 		padding: 16px 25px;
 		width: auto;
+		border-top: 0px solid rgba(238,59,36,0.99);
 	}
 	.about,.image,.active{
 	border-right: 0px solid;
+	border-top: 0px solid;
 }
 	.active{
 		border-right: 1px solid;
@@ -334,6 +407,9 @@ h2{
 @media screen and (min-width: 0px) and (max-width: 375px) {
 
 /*-- Header --*/
+	.page-header{
+		background-attachment: scroll;
+	}
 .header-content h1{
 	font-size: 56px;
 	}
@@ -346,6 +422,7 @@ h2{
 	.topnav a{
 		padding: 10px 25px;
 	}
+	
 /*-- End Header --*/
 	
 /*-- Image Gallery --*/
@@ -353,7 +430,17 @@ h2{
 /*-- End Image Gallery --*/
 	
 /*-- About Me --*/
-
+	.about-me-content p{
+		margin-right: 10px;
+		margin-left: 10px;
+		font-size: 22px;
+	}
+	.about-me{
+		padding-bottom: 50px
+	}
+	.textOne{
+		margin-top: 40px;
+	}
 /*-- End About Me --*/
 	
 /*-- Contact Me --*/	
@@ -365,12 +452,19 @@ h2{
 /*-- End Footer --*/
 }
 
-/*-------------------- End Media 0px - 375px --------------------*/
-
+/*-------------------- End Media 818px - 992px --------------------*/
+@media screen and (min-width: 818px) and (max-width: 992px) {
+	.topnav a{
+		width: 160px;
+	}
+}
 /*-------------------- Media 376px - 577px --------------------*/
 
 @media screen and (min-width: 376px) and (max-width: 577px) {
 /*-- Header --*/
+	.page-header{
+		background-attachment: scroll;
+	}
 .header-content h1{
 	font-size: 62px;
 	}
@@ -388,12 +482,20 @@ h2{
 
 /*-- Image Gallery --*/
 
-/*-- Image Gallery --*/
-
 /*-- End Image Gallery --*/
 
 /*-- About Me --*/
-
+.about-me-content p{
+		margin-right: 10px;
+		margin-left: 10px;
+		font-size: 24px;
+	}
+	.about-me{
+		padding-bottom: 50px
+	}
+	.textOne{
+		margin-top: 40px;
+	}
 /*-- End About Me --*/
 
 /*-- Contact Me --*/
@@ -408,7 +510,7 @@ h2{
 /*-------------------- Media 376px - 577px --------------------*/
 
 /*-------------------- Media 577px - 768px --------------------*/
-@media screen and ( min-width : 576px ) and (max-width : 757px ) {
+@media screen and ( min-width : 578px ) and (max-width : 757px ) {
 /*-- Header --*/
 .topnav a{
 		padding: 10px 25px;
@@ -420,7 +522,17 @@ h2{
 /*-- End Image Gallery --*/
 
 /*-- About Me --*/
-
+.about-me-content p{
+		margin-right: 70px;
+		margin-left: 70px;
+		
+	}
+	.about-me{
+		padding-bottom: 50px;
+	}
+	.textOne{
+		margin-top: 40px;
+	}
 /*-- End About Me --*/
 
 /*-- Contact Me --*/
@@ -438,7 +550,8 @@ h2{
 @media screen and (min-width: 758px) and (max-width: 992px) {
 /*-- Header --*/
 .topnav a{
-		padding: 10px 25px;
+		padding: 10px 45px;
+	
 	}
 /*-- End Header --*/
 
@@ -447,7 +560,17 @@ h2{
 /*-- End Image Gallery --*/
 
 /*-- About Me --*/
-
+.about-me-content p{
+		margin-right: 70px;
+		margin-left: 70px;
+		
+	}
+	.about-me{
+		padding-bottom: 50px;
+	}
+	.textOne{
+		margin-top: 40px;
+	}
 /*-- End About Me --*/
 
 /*-- Contact Me --*/
@@ -461,10 +584,12 @@ h2{
 
 /*-------------------- End Media 758 - 992pxpx --------------------*/
 
-/*-------------------- Media 992px - 1600px --------------------*/
+/*-------------------- Media 993px - 1600px --------------------*/
 @media screen and (min-width: 993px) and (max-width: 1600px) {
 /*-- Header --*/
-
+	.topnav a {
+		width: 190px;
+	}
 /*-- End Header --*/
 	
 /*-- Image Gallery --*/	
@@ -472,7 +597,17 @@ h2{
 /*-- End Image Gallery --*/
 	
 /*-- About Me --*/
-
+.about-me-content p{
+		margin-right: 70px;
+		margin-left: 70px;
+		
+	}
+	.about-me{
+		padding-bottom: 50px;
+	}
+	.textOne{
+		margin-top: 40px;
+	}
 /*-- End About Me --*/
 
 /*-- Contact Me --*/
@@ -500,7 +635,17 @@ h2{
 /*-- End Image Gallery --*/
 	
 /*-- About Me --*/	
-
+.about-me-content p{
+	font-size: 30px;
+		margin-right: 150px;
+		margin-left: 150px;	
+	}
+	.about-me{
+		padding-bottom: 40px;
+	}
+	.textOne{
+		margin-top: 40px;
+	}
 /*-- End About Me --*/
 	
 /*-- Contact Me --*/

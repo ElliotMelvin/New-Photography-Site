@@ -18,14 +18,17 @@
 <!-- ===End Font=== -->	
  
 <!-- ==CSS== -->
+	
 	<link rel="stylesheet" href="AboutPageAssets/styles/layout.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- ==End CSS== -->
 	
 <!-- ==Javascript== -->
+	
 	<script src="JavaScript/Main.js"> </script>
 	<script src="JavaScript/NavbarScroll.js"> </script>
 	<script src="JavaScript/scrollreveal.min.js"> </script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 	
 	<script>
      function myFunction() {
@@ -37,6 +40,7 @@
     }
 }
 </script>
+
 <!-- ==End Javascript== -->	
 </head>
 <!-- ====================End Head==================== -->
@@ -51,7 +55,8 @@
 		<section id="top" class="page-header">	
 			<!-- ==Navbar== -->
 			<div class="topnav" id="myTopnav">
-				<a  href="#home" class="active">Home</a><a  href="#image-gallery" class="image">Images</a><a  href="#about" class="about">About</a><a  href="#contact" class="contact">Contact</a> 
+				
+				<a  href="#home" class="active">Home</a><a  href="#image-gallery" class="image">Images</a><a  href="#about" class="about">About</a><a  href="#videos" class="videos">Videos</a><a  href="#contact" class="contact">Contact</a> 
 				<a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a>
 				
 			</div>
@@ -61,7 +66,7 @@
 			<div class="header-content" id="transistion">			
   			<div class="text">
   			<p id="error">E<span>l</span>lliot</p>
-  			<p id="code">M<span>E</span><span>LVIN</span></p>
+			<p id="code">M<span>E</span><span>LVIN</span></p>
 			<p id="textphoto"> Photo<span>gr</span><span>apher</span></p>
 			</div>
 			</div>
@@ -103,17 +108,35 @@
 
 	
 <!-- ========About Me======== -->	
-		<section id="about" class="about-me">	
+		<section id="about" class="about-me">
+			<h2>About Me</h2>
+			
 			<!--About Me Content-->
 			<div class="about-me-content">
-				<h1>About Me</h1>
-				<p>Hi! I’m Elliot and I’m a photographer in the quiet town of Stockport, but I shoot photographs all over the country. My favourite things in the world are exploring the world and shopping, and when I'm not takingphotographs you'll find me playing video games at home. My love of art is what made me want to be a photographer. I've just started in the indusrty of photography and I'm really enjoying it. </p>
+				
+			  <p class="textOne">Hi! I’m Elliot and I’m a photographer in the quiet town of Stockport, but I shoot photographs all over the country. My favourite things in the world are exploring the world and shopping, and when I'm not taking photographs you'll find me playing video games at home. My love of art is what made me want to be a photographer. I've just started in the indusrty of photography and I'm enjoying it. </p>
+				
+			  <p class="textTwo"> Since being on a Digital and Technology university course I've learnt how to code with Java,  HTML, CSS and Javascript. Coding can be a lot of fun allowing you to create anything you like with endless possibilities. Being on this course has given me new skills, allowing me to create a site like this one. I've faced many challenges where I've had to think outside the box for a solution. </p>
+				
+			  <p class="textThree">I'm currently listening to <strong>Panic! At the disco, Smallpools, Fallout boy and Robin Schulz.</strong> My favourite song is High Hopes by Panic. I'm a video game addict, my favourite games are <strong>League of Legends, Guild Wars 2, Stardew Valley, Ark Survival, Subnautica and Shadow of Mordor.</strong> These are currently the games I play the most as they offer alot of content and replayability.   </p>
 			</div>
 			<!--End About Me Content-->
 			
 		</section>	
 <!-- ========End About Me======== -->	
 	
+<!-- ========Videos======== -->	
+<section id="videos" class="videos">
+		  <h2>Videos</h2>
+			
+ <div class="video-content">
+				<video width="400px" class="videoO" src="AboutPageAssets/video/Beach.mp4" preload></video>
+			    <video width="400px" class="videoT" src="AboutPageAssets/video/Beach.mp4" preload></video>
+				<video width="400px" class="videoTh" src="AboutPageAssets/video/Beach.mp4" preload></video>
+  </div>
+
+</section>
+<!-- ========End Videos======== -->	
 	
 <!-- ========Contact Me======== -->	
 		<section id="contact" class="contact-me">
@@ -146,15 +169,8 @@
 				</form>
 			</div>
 			<!--End About Me Form-->
-			</div>
-		</section>	
-<!-- ========End Contact Me======== -->
-	
-	
-<!-- ========Footer======== -->
-		<section id="footer" class="footer">
-
-			<!--Footer Content-->
+				
+				<!--Footer Content-->
 			<div class="footer-content">
 				<h2>Elliot Melvin 2018 &copy;</h2>
 			<ul>
@@ -164,9 +180,10 @@
 			</ul>
 		  </div>
 			<!--End Footer Content-->
-		</section>
+			</div>
+		</section>	
+<!-- ========End Contact Me======== -->
 	
-<!-- ========End Footer======== -->
 </body>	
 </html>	
 <!-- ====================End HTML/Body==================== -->
