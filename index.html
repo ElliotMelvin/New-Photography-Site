@@ -29,6 +29,7 @@
 	<script src="JavaScript/NavbarScroll.js"> </script>
 	<script src="JavaScript/scrollreveal.min.js"> </script>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
 	
 	<script>
      function myFunction() {
@@ -41,6 +42,23 @@
 }
 </script>
 
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 <!-- ==End Javascript== -->	
 </head>
 <!-- ====================End Head==================== -->
@@ -140,7 +158,6 @@
 	
 <!-- ========Contact Me======== -->	
 		<section id="contact" class="contact-me">
-			<div class="about-image">
 			<!--About Me Content-->
 			<div class="contact-me-content">
 			<h2>Contact Me</h2>
@@ -149,22 +166,17 @@
 
 			<!--About Me Form-->
 			<div class="contact-me-form">
-				<form action="action_page.php">
+				<form class="contact-form" action="contact-me.php" method="post"> 
+					
+				<input type="text" name="name" placeholder="Full name">
 
-				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+				<input type="text" name="mail" placeholder="Your e-mail">
 
-				<label for="lname">Last Name</label>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				<input type="text"  name="subject" placeholder="Subject">
 
-				<label for="lname">Phone number</label>
-				<input type="text" id="pname" name="phonenumber" placeholder="Your phone number..">
+				<textarea name="subject" placeholder="Write something" style="height:200px"></textarea>
 
-
-				<label for="subject">Subject</label>
-				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-				<input type="submit" value="Submit">
+				<button class="send" name="submit" type="submit">Send</button>
 
 				</form>
 			</div>
@@ -172,7 +184,7 @@
 				
 				<!--Footer Content-->
 			<div class="footer-content">
-				<h2>Elliot Melvin 2018 &copy;</h2>
+				<h2>&copy; Elliot Melvin 2018</h2>
 			<ul>
 				<li><a href="https://www.instagram.com/elliotm_photography/" target="_blank"><i class="fa fa-fw fa-instagram"></i></a></li>
 				<li><a href="https://www.redbubble.com/people/ElliotMelvin?asc=u" target="_blank"><i class="fa fa-fw fa-image"></i></a></li>
@@ -180,7 +192,6 @@
 			</ul>
 		  </div>
 			<!--End Footer Content-->
-			</div>
 		</section>	
 <!-- ========End Contact Me======== -->
 	
