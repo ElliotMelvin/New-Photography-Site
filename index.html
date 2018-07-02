@@ -1,37 +1,37 @@
 <!doctype html>
 <html	lang="en-gb">
 
-<!-- ====================Start Head==================== -->	
-<head>	
+<!-- ====================Start Head==================== -->
+<head>
 <meta charset="utf-8">
 <!-- meta tags for Internet Explorer and mobile devices -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- ==Title== -->
-	<title>Elliot Melvin</title>
+<title>Elliot Melvin</title>
 <!-- ==End Title== -->
-	
+
 <!-- ==Font== -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah%7CIndie+Flower">
-	
-<!-- ===End Font=== -->	
- 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah%7CIndie+Flower">
+
+<!-- ===End Font=== -->
+
 <!-- ==CSS== -->
-	
-	<link rel="stylesheet" href="AboutPageAssets/styles/layout.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="AboutPageAssets/styles/layout.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- ==End CSS== -->
-	
+
 <!-- ==Javascript== -->
-	
-	<script src="JavaScript/Main.js"> </script>
-	<script src="JavaScript/NavbarScroll.js"> </script>
-	<script src="JavaScript/scrollreveal.min.js"> </script>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-	
-	<script>
+
+<script src="JavaScript/Main.js"> </script>
+<script src="JavaScript/NavbarScroll.js"> </script>
+<script src="JavaScript/scrollreveal.min.js"> </script>
+<script src="JavaScript/JQuery.js"> </script>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+<!-- Responsive topnav  -->
+<script>
      function myFunction() {
      var x = document.getElementById("myTopnav");
      if (x.className === "topnav") {
@@ -42,11 +42,12 @@
 }
 </script>
 
-	<script>
+<!-- Button that takes user to the top -->
+<script>
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+	window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
+	function scrollFunction() {
     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
         document.getElementById("myBtn").style.display = "block";
     } else {
@@ -54,148 +55,225 @@ function scrollFunction() {
     }
 }
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+	function topFunction() {
+    	document.body.scrollTop = 0;
+    	document.documentElement.scrollTop = 0;
 }
 </script>
-<!-- ==End Javascript== -->	
+
+<!-- Preloader -->
+<script>
+	$(document).ready(function() {
+		//Preloader
+		$(window).on("load", function() {
+	preloaderFadeOutTime = 500;
+	function hidePreloader() {
+	var preloader = $('.spinner-wrapper');    
+	preloader.fadeOut(preloaderFadeOutTime);
+	}
+	hidePreloader();
+	});
+	});
+
+</script>
+<!-- ==End Javascript== -->
 </head>
 <!-- ====================End Head==================== -->
 
 <!-- ====================Start Body==================== -->
 <body>
 <!-- ========Loading Screen======== -->
-<!-- ========End Loading Screen======== -->	
-	
+<div class="spinner-wrapper">
+  <div class="spinner"></div>
+</div>
+<!-- ========End Loading Screen======== --> 
+
 <!-- ========Start Header======== -->
-	
-		<section id="top" class="page-header">	
-			<!-- ==Navbar== -->
-			<div class="topnav" id="myTopnav">
-				
-				<a  href="#home" class="active">Home</a><a  href="#image-gallery" class="image">Images</a><a  href="#about" class="about">About</a><a  href="#videos" class="videos">Videos</a><a  href="#contact" class="contact">Contact</a> 
-				<a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a>
-				
-			</div>
-			<!-- ==End Navbar== -->
-
-			<!-- ==Header Content== -->
-			<div class="header-content" id="transistion">			
-  			<div class="text">
-  			<p id="error">E<span>l</span>lliot</p>
-			<p id="code">M<span>E</span><span>LVIN</span></p>
-			<p id="textphoto"> Photo<span>gr</span><span>apher</span></p>
-			</div>
-			</div>
-			<a class="container-arrow scroll-to" href="#cards"> <span> <em class="fa fa-angle-down" aria-hidden="true"></em></span> </a></section>	
-<!-- ========End Header======== -->	
-	
-<!-- ========Image Gallery======== -->
-		<section id="images" class="image-gallery">	
-			<div class="image-content"><h1>Image Gallery</h1> </div>
-
-			<!-- Photo Grid -->
-			<div class="row"> 
-			  <div class="column">
-				<img class="one" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="two" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="three" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="four" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="five" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-
-			  </div>
-			  <div class="column">
-				<img class="one" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="two" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="three" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="four" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="five" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-			  </div>  
-			  <div class="column">
-				<img class="one" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="two" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="three" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="four" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-				<img class="five" alt="text" src="images/background-beach-clouds-719609.jpg" style="width:100%">
-			  </div>
-
-			</div>
-		</section>	
-<!-- ========End Image Gallery======== -->
-
-	
-<!-- ========About Me======== -->	
-		<section id="about" class="about-me">
-			<h2>About Me</h2>
-			
-			<!--About Me Content-->
-			<div class="about-me-content">
-				
-			  <p class="textOne">Hi! I’m Elliot and I’m a photographer in the quiet town of Stockport, but I shoot photographs all over the country. My favourite things in the world are exploring the world and shopping, and when I'm not taking photographs you'll find me playing video games at home. My love of art is what made me want to be a photographer. I've just started in the indusrty of photography and I'm enjoying it. </p>
-				
-			  <p class="textTwo"> Since being on a Digital and Technology university course I've learnt how to code with Java,  HTML, CSS and Javascript. Coding can be a lot of fun allowing you to create anything you like with endless possibilities. Being on this course has given me new skills, allowing me to create a site like this one. I've faced many challenges where I've had to think outside the box for a solution. </p>
-				
-			  <p class="textThree">I'm currently listening to <strong>Panic! At the disco, Smallpools, Fallout boy and Robin Schulz.</strong> My favourite song is High Hopes by Panic. I'm a video game addict, my favourite games are <strong>League of Legends, Guild Wars 2, Stardew Valley, Ark Survival, Subnautica and Shadow of Mordor.</strong> These are currently the games I play the most as they offer alot of content and replayability.   </p>
-			</div>
-			<!--End About Me Content-->
-			
-		</section>	
-<!-- ========End About Me======== -->	
-	
-<!-- ========Videos======== -->	
-<section id="videos" class="videos">
-		  <h2>Videos</h2>
-			
- <div class="video-content">
-				<video width="400px" class="videoO" src="AboutPageAssets/video/Beach.mp4" preload></video>
-			    <video width="400px" class="videoT" src="AboutPageAssets/video/Beach.mp4" preload></video>
-				<video width="400px" class="videoTh" src="AboutPageAssets/video/Beach.mp4" preload></video>
+<section id="top" class="page-header"> 
+  <!-- ==Navbar== -->
+  <div class="topnav" id="myTopnav"> <a  href="#home" class="active">Home</a><a  href="#image-gallery" class="image">Images</a><a  href="#about" class="about">About</a><a  href="#videos" class="videos">Videos</a><a  href="#contact" class="contact">Contact</a> <a href="javascript:void(0);" class="icon" onClick="myFunction()"> <em class="fa fa-bars"></em> </a> </div>
+  <!-- ==End Navbar== --> 
+  
+  <!-- ==Header Content== -->
+  <div class="header-content" id="transistion">
+    <div id="bounceTxt" class="text">
+      <p class="animated bounce" id="error">E<span>l</span>lliot</p>
+      <p class="animated bounce" id="code">M<span>E</span><span>LVIN</span></p>
+      <p class="animated bounce" id="textphoto"> Photo<span>gr</span><span>apher</span></p>
+    </div>
   </div>
+  <a class="container-arrow scroll-to" href="#cards"> <span> <em class="fa fa-angle-down" aria-hidden="true"></em></span> </a></section>
+<!-- ========End Header======== --> 
 
+<!-- ========Image Gallery======== -->
+<section id="images" class="image-gallery">
+  <div class="image-content">
+    <h1>Image Gallery</h1>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row">
+    <div class="column"> 
+		
+		<div class="text-container"><img id="test" class="one" alt="text" src="images/Leaf.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="two" alt="text" src="images/Yellow-Flower.jpg" style="width:100%"><div class="overlay">Test1</div></div>
+		<div class="text-container"><img class="three" alt="text" src="images/PurpleFlowerEdit.jpg" style="width:100%"><div class="overlay">Test1</div></div>
+		<div class="text-container"><img class="four" alt="text" src="images/FlowerEdit.jpg" style="width:100%"><div class="overlay">Test1</div></div>
+		<div class="text-container"><img class="five" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test1</div></div>
+    </div>
+	  
+    <div class="column"> 
+		<div class="text-container"><img class="one" alt="text" src="images/Bee.jpg" style="width:100%"><div class="overlay">Bee</div></div>
+		<div class="text-container"><img class="two" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="three" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="four" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="five" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+	  </div>
+	  
+    <div class="column"> 
+		<div class="text-container"><img class="one" alt="text" src="images/NightSky.jpg" style="width:100%"><div class="overlay">Sunset</div></div>
+		<div class="text-container"><img class="two" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="three" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="four" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="five" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+	  </div>
+	  
+    <div class="column"> 
+		<div class="text-container"><img class="one" alt="text" src="images/Friends.jpg" style="width:100%"><div class="overlay">Friends</div></div>
+		<div class="text-container"><img class="two" alt="text" src="images/GoForTheSky.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="three" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="four" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+		<div class="text-container"><img class="five" alt="text" src="images/image.jpg" style="width:100%"><div class="overlay">Test</div></div>
+	  </div>
+  </div>
+	
 </section>
-<!-- ========End Videos======== -->	
-	
-<!-- ========Contact Me======== -->	
-		<section id="contact" class="contact-me">
-			<!--About Me Content-->
-			<div class="contact-me-content">
-			<h2>Contact Me</h2>
-			</div>
-			<!--End About Me Content-->
+<!-- ========End Image Gallery======== --> 
 
-			<!--About Me Form-->
-			<div class="contact-me-form">
-				<form class="contact-form" action="contact-me.php" method="post"> 
-					
-				<input type="text" name="name" placeholder="Full name">
+<!-- ========About Me======== -->
+<section id="about" class="about-me">
+  <h2>About Me</h2>
+  
+  <!--About Me Content-->
+  
+  <div class="timeline">
+    <div class="container left">
+      <div class="content-1">
+        <h3>Who?</h3>
+        <p>Hi! I’m Elliot and I’m a photographer in the quiet town of Stockport. My favourite things in the world are exploring the world and shopping, and when I'm not taking photographs you'll find me playing video games at home. My love of art is what made me want to be a photographer. I've just started in the indusrty of photography and I'm enjoying it.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content-2">
+        <h3>Learning?</h3>
+        <p>Since being on a Digital and Technology university course I've learnt how to code with Java,  HTML, CSS and Javascript. Coding can be a lot of fun allowing you to create anything you like with endless possibilities. Being on this course has given me new skills, allowing me to create a site like this one. I've faced many challenges.</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content-3">
+        <h3>What I enjoy?</h3>
+        <p>I'm currently listening to <strong>Panic! At the disco, Smallpools, Fallout boy and Robin Schulz.</strong> My favourite song is High Hopes by Panic. I'm a video game addict, my favourite games are <strong>League of Legends, Guild Wars 2, Stardew Valley, Ark Survival, Subnautica and Shadow of Mordor.</strong> These are currently my favourite games!</p>
+      </div>
+    </div>
+  </div>
+  <!--End About Me Content--> 
+  
+</section>
+<!-- ========End About Me======== --> 
 
-				<input type="text" name="mail" placeholder="Your e-mail">
+<!-- ========Videos======== -->
+<section id="videos" class="my-videos">
+  <h2>Videos</h2>
+  <div class="wrapper">
+    <input checked type="radio" name="slider" id="slide1" />
+    <input type="radio" name="slider" id="slide2" />
+    <input type="radio" name="slider" id="slide3" />
+    <input type="radio" name="slider" id="slide4" />
+    <input type="radio" name="slider" id="slide5" />
+    <div class="slider-wrapper">
+      <div class="inner">
+        <article>
+          <div class="info top-left"> </div>
+          <video width="100%" id="videoOne" class="videoOne" src="AboutPageAssets/video/Beach.mp4" preload></video>
+        </article>
+        <article>
+          <div class="info bottom-right"> </div>
+          <video width="100%" id="videoTwo" class="videoTwo" src="AboutPageAssets/video/Beach.mp4" preload></video>
+        </article>
+        <article>
+          <div class="info bottom-left"> </div>
+          <video width="100%" id="videoThree" class="VideoThree" src="AboutPageAssets/video/Beach.mp4" preload></video>
+        </article>
+        <article>
+          <div class="info top-right"> </div>
+          <video width="100%" id="videoFour" class="VideoFour" src="AboutPageAssets/video/Beach.mp4" preload></video>
+        </article>
+        <article>
+          <div class="info bottom-left"> </div>
+          <video width="100%" id="videoFive" class="VideoFive" src="AboutPageAssets/video/Beach.mp4" preload></video>
+        </article>
+      </div>
+    </div>
+    <!-- .slider-wrapper -->
+    <div class="slider-prev-next-control">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+      <label for="slide5"></label>
+    </div>
+    <!-- .slider-prev-next-control -->
+    
+    <div class="slider-dot-control">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+      <label for="slide5"></label>
+    </div>
+	  
+    <div class="video-controls">
+      <button type="button" id="play-pause"><i class="fa fa-play"></i></button>
+      <button type="button" id="mute"><i class="fa fa-volume-off"></i></button>
+    </div>
+	  
+  </div>
+</section>
+<!-- ========End Videos======== --> 
 
-				<input type="text"  name="subject" placeholder="Subject">
-
-				<textarea name="subject" placeholder="Write something" style="height:200px"></textarea>
-
-				<button class="send" name="submit" type="submit">Send</button>
-
-				</form>
-			</div>
-			<!--End About Me Form-->
-				
-				<!--Footer Content-->
-			<div class="footer-content">
-				<h2>&copy; Elliot Melvin 2018</h2>
-			<ul>
-				<li><a href="https://www.instagram.com/elliotm_photography/" target="_blank"><i class="fa fa-fw fa-instagram"></i></a></li>
-				<li><a href="https://www.redbubble.com/people/ElliotMelvin?asc=u" target="_blank"><i class="fa fa-fw fa-image"></i></a></li>
-				<li><a href="https://github.com/ElliotMelvin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-			</ul>
-		  </div>
-			<!--End Footer Content-->
-		</section>	
+<!-- ========Contact Me======== -->
+<section id="contact" class="contact-me"> 
+  <!--About Me Content-->
+  <div class="contact-me-content">
+    <h2>Contact Me</h2>
+  </div>
+  <!--End About Me Content--> 
+  
+  <!--About Me Form-->
+  <div class="contact-me-form">
+    <form method="post" class="contact-form" action="PHP/contact-me.php">
+      <input type="text" name="name" placeholder="Full name">
+      <input type="text" name="email" placeholder="Your e-mail">
+      <input type="text"  name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Write something" style="height:200px"></textarea>
+      <button type="submit" class="send">Send</button>
+    </form>
+  </div>
+  <!--End About Me Form--> 
+  
+  <!--Footer Content-->
+  <div class="footer-content">
+    <h2>&copy; Elliot Melvin 2018</h2>
+    <ul>
+      <li><a href="https://www.instagram.com/elliotm_photography/" target="_blank"><i class="fa fa-fw fa-instagram"></i></a></li>
+      <li><a href="https://www.redbubble.com/people/ElliotMelvin?asc=u" target="_blank"><i class="fa fa-fw fa-image"></i></a></li>
+      <li><a href="https://github.com/ElliotMelvin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <!--End Footer Content--> 
+</section>
 <!-- ========End Contact Me======== -->
-	
-</body>	
-</html>	
-<!-- ====================End HTML/Body==================== -->
 
+</body>
+</html>
+<!-- ====================End HTML/Body==================== -->

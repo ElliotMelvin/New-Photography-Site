@@ -11,7 +11,7 @@ if ( $_SERVER[ 'REQUEST_METHOD' ] == 'POST' ) {
     $mail->SMTPAuth = true; // enable SMTP authentication
     $mail->Port = 587; // set the SMTP port for the GMAIL server
     $mail->Username = "elliot221@live.co.uk"; // SMTP account username example
-    $mail->Password = "Good.bag1968!"; // SMTP account password example
+    $mail->Password = ""; // SMTP account password example
     
 
     $to = "elliot221@live.co.uk";
